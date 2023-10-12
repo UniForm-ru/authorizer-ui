@@ -1,11 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
 .wrapper {
-    height: 100vh;
+    font-family: Roboto;
+    min-height: 100vh;
     background: linear-gradient(162deg, rgba(5, 13, 37, 0.22) 9.86%, #2F3341 87.5%);
     padding: 50px 15px;
     font-size: 1rem;
     color: #fff;
 }
-
 .container {
     border-radius: 30px;
     background: #061432;
@@ -13,23 +16,110 @@
     margin: auto;
 }
 
-.header {
+header {
     background: #041028;
     border-radius: 30px 30px 0px 0px;
     padding: 17px 55px;
     display: flex;
     gap: 16px;
     align-items: center;
+    font-family: Montserrat;
+    font-size: 1.4rem;
 }
 
 .logo {
     
 }
 
-.univercity {
-
+main {
+    padding: 39px 61px 3px;
+    font-size: 1.345rem;
 }
 
-.main {
-    padding: 39px 61px 3px;
+.top__container {
+    display: flex;
+    gap: 69px;
+}
+
+.bottom__container {
+    margin: 70px 0 0 0;
+    display: flex;
+    gap: 260px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+    min-width: 290px;
+    max-width: 305px;
+}
+
+.photo {
+    width: 282px;
+    height: 344px;
+    background-color: #fff;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.reset__request {
+    margin: 58px 0 5px 0;
+    text-align: center;
+}
+
+.reset__request button {
+    background-color: rgba(28,28,28,0);
+    color: rgba(255, 255, 255, 0.64);
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration-line: underline;
+}
+
+.reset__request button:hover {
+    color: #fff;
+}
+
+footer {
+    font-size: 1.345rem;
+    background: #041028;
+    border-radius: 0px 0px 30px 30px;
+    padding: 39px 26px 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__content {
+    text-align: center;
+    margin: auto;
+}
+
+.login {
+    margin: 14px 0 0 0;
+}
+
+.qr {
+    height: 148px;
+    width: 148px;
+    background-color: #fff;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer button {
+    background-color: rgba(28,28,28,0);
+    align-self: flex-end;
+    color: #FFF;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 1.345rem;
+    letter-spacing: 0.1em;
+}
+
+footer button:hover {
+    text-decoration: underline;
 }
