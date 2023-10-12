@@ -1,6 +1,12 @@
+import { useState } from 'react'
 import style from './AuthorizerWrapper.module.css'
 
 export const AuthorizerWrapper = () => {
+    const [login, setLogin] = useState('')
+    const [password, setPassword] = useState('')
+
+
+
   return (
     <div className={style.wrapper}>
         <div className={style.container}>
