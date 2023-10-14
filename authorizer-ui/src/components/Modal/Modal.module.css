@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+.wrapper {
+    transform: scale(0);
+}
+
+.wrapper__active {
+    transform: scale(1);
+    height: 100vh;
+    width: 100vw;
+    background: rgba(5, 22, 57, 0.88);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    max-width: 527px;
+    border-radius: 32px;
+    border: 5px solid #FFF;
+    background: rgba(105, 155, 247, 0.09);
+    box-shadow: 0px -2px 7px 0px rgba(0, 0, 0, 0.10);
+    padding: 28px 71px 200px;
+    text-align: center;
+}
+
+.content {
+    margin: 39px 0 0 0;
+    display: flex;
+    gap: 39px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.close__button {
+    border: none;
+    position: absolute;
+    padding: 0;
+    right: 28px;
+    top: 20px;
+    font-size: 35px;
+}
+
+button {
+    padding: 13px;
+    color: #FFF;
+    background-color: rgba(28,28,28,0);
+    font-family: Montserrat;
+    font-size: 1.7rem;
+}
+
+.button {
+    border-radius: 6px;
+    border: 1px solid #FFF;
+    width: 385px;
+}

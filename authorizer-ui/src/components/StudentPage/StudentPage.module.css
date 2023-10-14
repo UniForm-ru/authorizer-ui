@@ -9,11 +9,13 @@
     font-size: 1rem;
     color: #fff;
 }
+
 .container {
     border-radius: 30px;
     background: #061432;
     max-width: 777px;
     margin: auto;
+    /*filter: blur(0.4rem)*/
 }
 
 header {

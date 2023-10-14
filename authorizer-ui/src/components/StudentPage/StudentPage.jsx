@@ -2,8 +2,12 @@ import { StudentPageInfo } from '../StudentPageInfo/StudentPageInfo'
 import style from './StudentPage.module.css'
 //импорт студента заменить на получене того же файла с бэка
 import {student} from './StudentInfo.js'
+import { Modal } from '../Modal/Modal'
+import { useState } from 'react'
 
 export const StudentPage = () => {
+
+  const [modalActive, setModalActive] = useState(false)
 
   return (
     <div className={style.wrapper}>
@@ -35,9 +39,10 @@ export const StudentPage = () => {
                 <div className={style.qr} style={{backgroundImage:`url(${student.qr})`}}/>
                 <div className={style.login}>login</div>
               </div>
-              <button>Меню</button>
+              <button onClick={() => setModalActive(true)}>Меню</button>
             </footer>
         </div>
+        <Modal active={modalActive} setActive={setModalActive}/>
     </div>
   )
 }
