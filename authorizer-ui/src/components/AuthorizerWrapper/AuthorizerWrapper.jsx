@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import style from './AuthorizerWrapper.module.css'
+import { Link } from 'react-router-dom'
 
 export const AuthorizerWrapper = () => {
     const [login, setLogin] = useState('')
@@ -20,7 +21,9 @@ export const AuthorizerWrapper = () => {
                 <input className={style.input} placeholder='Пароль'/>
             </div>
             <div className={style.restore}>Восстановить пароль</div>
-            <div className={style.button}>Войти</div>
+            <Link to={'/student'}>
+                <div className={style.button}>Войти</div>
+            </Link>
         </div>
     </div>
   )

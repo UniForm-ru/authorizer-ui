@@ -15,7 +15,14 @@
     background: #061432;
     max-width: 777px;
     margin: auto;
-    /*filter: blur(0.4rem)*/
+}
+
+.container__blur {
+    border-radius: 30px;
+    background: #061432;
+    max-width: 777px;
+    margin: auto;
+    filter: blur(0.4rem)
 }
 
 header {
@@ -27,10 +34,6 @@ header {
     align-items: center;
     font-family: Montserrat;
     font-size: 1.4rem;
-}
-
-.logo {
-    
 }
 
 main {
