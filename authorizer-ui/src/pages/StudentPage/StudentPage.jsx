@@ -1,9 +1,10 @@
-import { StudentPageInfo } from '../StudentPageInfo/StudentPageInfo'
+import { StudentPageInfo } from '../../components/StudentPageInfo/StudentPageInfo'
 import style from './StudentPage.module.css'
 //импорт студента заменить на получене того же файла с бэка
 import {student} from './StudentInfo.js'
-import { Modal } from '../Modal/Modal'
-import { useState } from 'react'
+import { Sidebar } from '../../components/Sidebar/Sidebar'
+// import { Modal } from '../../components/Modal/Modal'
+// import { useState } from 'react'
 
 export const StudentPage = () => {
   
@@ -29,11 +30,12 @@ export const StudentPage = () => {
   const student = JSON.parse(jsonStudent)
   */
 
-  const [modalActive, setModalActive] = useState(false)
+  //const [modalActive, setModalActive] = useState(false)
 
   return (
     <div className={style.wrapper}>
-        <div className={modalActive? style.container__blur : style.container}>
+        <Sidebar/>
+        <div className={/*modalActive? style.container__blur : */style.container}>
             <header>
                 <div className={style.logo}>logo</div>
                 <div className={style.univercity}>{student.univercity}</div>
@@ -61,10 +63,10 @@ export const StudentPage = () => {
                 <div className={style.qr} style={{backgroundImage:`url(${student.qr})`}}/>
                 <div className={style.login}>login</div>
               </div>
-              <button onClick={() => setModalActive(true)}>Меню</button>
+              {/* <button onClick={() => setModalActive(true)}>Меню</button> */}
             </footer>
         </div>
-        <Modal active={modalActive} setActive={setModalActive}/>
+        {/* <Modal active={modalActive} setActive={setModalActive}/> */}
     </div>
   )
 }

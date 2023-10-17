@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom'
 export const AuthorizerWrapper = () => {
     const [login, setLogin] = useState('')
     const [password, setPassword] = useState('')
+    const [isAuthenticated, setIsAuthenticated] = useState(false)
 
-
-
+  
   return (
     <div className={style.wrapper}>
         <div className={style.container}>
@@ -15,10 +15,21 @@ export const AuthorizerWrapper = () => {
                 <img src="/logo.svg" alt="logo" />
             </div>
             <div>
-                <input className={style.input} placeholder='Телефон / email'/>
+                <input 
+                    className={style.input} 
+                    placeholder='Телефон / email'
+                    value={login}
+                    onChange={e => setLogin(e.target.value)}
+                />
             </div>
             <div>
-                <input className={style.input} placeholder='Пароль'/>
+                <input 
+                    className={style.input} 
+                    type='password'
+                    placeholder='Пароль'
+                    value={password}
+                    onChange={e => setPassword(e.target.value)}
+                />
             </div>
             <div className={style.restore}>Восстановить пароль</div>
             <Link to={'/student'}>

@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { AuthorizerWrapper } from './AuthorizerWrapper/AuthorizerWrapper'
-import { StudentPage } from './StudentPage/StudentPage'
+import { StudentPage } from '../pages/StudentPage/StudentPage'
+import { AuthorizerWrapper } from '../pages/AuthorizerWrapper/AuthorizerWrapper'
+import { Schedule } from '../pages/Schedule/Schedule'
 
 export const Router = () => {
   return (
@@ -8,7 +9,7 @@ export const Router = () => {
         <Routes>
             <Route element={<AuthorizerWrapper/>} path='/'/>
             <Route element={<StudentPage/>} path='/student'/>
-
+            <Route element={<Schedule/>} path='/shedule'/>
             <Route element={<div>Not found</div>} path='*'/>
         </Routes>
     </BrowserRouter>

@@ -1,5 +1,5 @@
 .wrapper {
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(162deg, rgba(5, 13, 37, 0.22) 9.86%, #2F3341 87.5%);
     padding: 111px 15px;
     font-size: 1rem;
