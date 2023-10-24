@@ -1,0 +1,67 @@
+.subject__container {
+    padding: 16px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 14px;    
+    border: 3px solid #000; 
+    background: linear-gradient(108deg, rgba(255, 255, 255, 0.28) 1.92%, rgba(255, 255, 255, 0.00) 100.84%);
+    backdrop-filter: blur(25px);
+}
+
+.top__constainer {
+    display: flex;
+    gap: 8px;
+}
+
+.time {
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.type__lect {
+    padding: 4px 16px;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid #FFF;
+    background: rgba(1, 255, 225, 0.57);
+}
+
+.type__sem {
+    padding: 4px 16px;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid #FFF;
+    background: rgba(28, 238, 87, 0.54);
+}
+
+.subject {
+    font-size: 1.1rem;
+}
+
+.location {
+    display: flex;
+    gap: 8px;
+    color: #FFF;
+}
+
+.location__building {
+    padding: 4px;
+    text-align: center;
+    border-radius: 4px;
+    background: #DE1D6E;
+}
+
+.location__classroom {
+    padding: 4px;
+    text-align: center;
+    border-radius: 4px;
+    background: #4F1DDE;
+}
+
+.taecher {
+    color: rgba(255, 255, 255, 0.76);
+}

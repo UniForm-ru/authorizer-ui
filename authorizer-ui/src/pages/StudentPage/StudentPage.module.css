@@ -4,8 +4,8 @@
 .wrapper {
     font-family: Roboto;
     min-height: 100vh;
-    background: linear-gradient(162deg, rgba(5, 13, 37, 0.22) 9.86%, #2F3341 87.5%);
-    background-color: #202020;
+    background: linear-gradient(160deg, rgba(5, 13, 37, 0.22) 9.61%, #2F3341 85.91%);
+    /* background-color: #202020; */
     padding: 50px 15px;
     font-size: 1rem;
     color: #fff;

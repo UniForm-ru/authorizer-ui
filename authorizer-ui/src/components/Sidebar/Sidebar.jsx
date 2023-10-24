@@ -15,19 +15,39 @@ export const Sidebar = () => {
 
     const menuItems = [
         {
+            path: '*',
+            icon: '',
+            label: 'Мессенджер',
+        },
+        {
             path: '/student', 
             icon: '/schedule.svg',
+            icon_active: '/schedule_active.svg',
             label:'Личный кабинет',
         }, 
         {
             path: '/shedule', 
             icon: '/schedule.svg',
+            icon_active: '/schedule_active.svg',
             label:'Расписание',
         },
         {
             path: '/', 
-            icon: '/schedule.svg',
-            label:'Личный кабинет',
+            icon: '/events.svg',
+            icon_active: '/events_active.svg',
+            label:'События',
+        },
+        {
+            path: '/', 
+            icon: '/studies.svg',
+            icon_active: '/studies_active.svg',
+            label:'Учебные материалы',
+        },
+        {
+            path: '/', 
+            icon: '/map.svg',
+            icon_active: '/map_active.svg',
+            label:'Карта',
         }
     ];
 
