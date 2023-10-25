@@ -10,19 +10,19 @@ export const Sidebar = () => {
 
     const toggleSidebar = () => {
         setIsOpen(!isOpen)
-        console.log(isOpen)
     }
 
     const menuItems = [
         {
             path: '*',
-            icon: '',
+            icon: '/messenger.svg',
+            icon_active: '/messenger_active.svg',
             label: 'Мессенджер',
         },
         {
             path: '/student', 
-            icon: '/schedule.svg',
-            icon_active: '/schedule_active.svg',
+            icon: '/card.svg',
+            icon_active: '/card_active.svg',
             label:'Личный кабинет',
         }, 
         {

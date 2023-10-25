@@ -15,6 +15,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
     gap: 10px;
+    zoom: 80%;/*необязательно лучше это убрать*/
 }
 
 .day_container {

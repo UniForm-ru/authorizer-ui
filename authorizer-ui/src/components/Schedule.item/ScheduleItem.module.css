@@ -1,18 +1,48 @@
+.main_container {
+    position: relative;
+}
+
+.back, .back__rotate {
+    position: absolute;
+    padding: 16px 8px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 1s;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    border-radius: 14px;    
+    background: linear-gradient(108deg, rgba(6, 20, 55, 1.00) 1.92%, rgba(255, 255, 255, 0.00) 90.84%);
+    border: 3px solid rgba(255, 255, 255, 0.28); 
+    backdrop-filter: blur(10rem);
+}
+
+.front, .front__rotate {
+    transition: 1s;
+    backface-visibility: hidden;
+}
+
+.front__rotate {transform: rotateY(180deg);}
+.back__rotate {transform: rotateY(360deg);}
+
 .subject__container {
     padding: 16px 8px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
+    gap:10px;
     border-radius: 14px;    
-    border: 3px solid #000; 
+    border: 3px solid rgba(255, 255, 255, 0.28); 
     background: linear-gradient(108deg, rgba(255, 255, 255, 0.28) 1.92%, rgba(255, 255, 255, 0.00) 100.84%);
     backdrop-filter: blur(25px);
 }
 
-.top__constainer {
+.inner__constainer {
     display: flex;
-    gap: 8px;
+    justify-content: space-between;
 }
 
 .time {
@@ -23,6 +53,7 @@
 }
 
 .type__lect {
+    text-transform: capitalize;
     padding: 4px 16px;
     text-align: center;
     border-radius: 6px;
@@ -31,6 +62,7 @@
 }
 
 .type__sem {
+    text-transform: capitalize;
     padding: 4px 16px;
     text-align: center;
     border-radius: 6px;
@@ -39,7 +71,8 @@
 }
 
 .subject {
-    font-size: 1.1rem;
+    text-transform: capitalize;
+    font-size: 1.2rem;
 }
 
 .location {
@@ -63,5 +96,36 @@
 }
 
 .taecher {
+    color: rgba(255, 255, 255, 0.76);
+}
+
+.edit__image, .back__image {
+    max-height: 1.4rem;
+    align-self: flex-end;
+}
+
+.gap__container {
+    position: relative;
+    text-align: center;
+}
+
+.gap__image {
+    position: absolute;
+    max-height: 40px;
+    top: -12px;
+    left: 0;
+}
+textarea {
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    /*border-bottom: 1px solid gray;*/
+    outline: none;
+    flex: 1 1 auto;
+    resize: none;
+    overflow: hidden;
+}
+
+textarea::placeholder {
     color: rgba(255, 255, 255, 0.76);
 }
